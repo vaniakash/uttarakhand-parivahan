@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-ticket-bg: #f4e9d8;
+  --color-ticket-border: #d4c5b0;
+  --color-ticket-text: #3c2a21;
+  --color-accent-red: #b91c1c;
+  --color-accent-yellow: #eab308;
+  
+  --font-yatra: var(--font-yatra);
+  --font-mono: var(--font-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* Stroke effect for massive Devanagari title */
+.title-stroke {
+  color: white;
+  text-shadow: 
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000,
+    0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Retro ticket styling */
+.ticket-panel {
+  background-color: var(--color-ticket-bg);
+  border: 1px solid var(--color-ticket-border);
+  color: var(--color-ticket-text);
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.15), inset 0 0 15px rgba(255,255,255,0.4);
+}
+
+.ticket-stamp {
+  border: 1px solid var(--color-accent-red);
+  color: var(--color-accent-red);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
 }

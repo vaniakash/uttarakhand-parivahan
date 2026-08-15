@@ -20,7 +20,7 @@ export default function PlayerBar() {
 
   return (
     <>
-      <div className="absolute top-[45%] lg:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 w-full max-w-[340px] lg:max-w-4xl px-4 mt-8 lg:mt-16">
+      <div className="absolute top-[45%] lg:top-[38%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 w-full max-w-[340px] lg:max-w-4xl px-4 mt-8 lg:mt-0">
         <div className="ticket-panel rounded-[2rem] lg:rounded-full flex flex-col lg:flex-row items-center px-6 lg:px-4 pt-8 lg:py-3 pb-4 lg:pb-3 gap-4 lg:gap-6 shadow-2xl relative lg:pr-6">
           
           {/* Top Ticket Perforation Line (Mobile only) */}

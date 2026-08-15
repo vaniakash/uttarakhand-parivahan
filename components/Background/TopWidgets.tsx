@@ -43,15 +43,15 @@ export default function TopWidgets() {
   }, []);
 
   return (
-    <div className="absolute top-4 right-4 flex flex-col gap-2 z-10 font-mono select-none">
-      <div className="ticket-panel rounded-md px-3 py-1 flex items-center justify-between min-w-[130px]">
+    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-row flex-wrap justify-center gap-2 md:gap-4 z-10 font-mono select-none w-full px-4">
+      <div className="ticket-panel rounded-full px-4 py-2 flex flex-col md:flex-row md:items-center justify-between min-w-[120px] shadow-lg">
         <span className="text-[10px] text-orange-600 font-bold uppercase">Time</span>
         <span className="text-xs font-bold text-gray-800 tracking-tighter ml-2">{time}</span>
       </div>
       
-      <div className="ticket-panel rounded-md px-3 py-1 flex items-center justify-between min-w-[130px]">
+      <div className="ticket-panel rounded-full px-4 py-2 flex flex-col md:flex-row md:items-center justify-between min-w-[120px] shadow-lg">
         <span className="text-[10px] text-orange-600 font-bold uppercase">Travellers</span>
-        <span className="text-xs font-bold text-gray-800 flex items-center gap-1.5 ml-2">
+        <span className="text-xs font-bold text-gray-800 flex items-center gap-1.5 md:ml-2 mt-1 md:mt-0">
           <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" /> {travellers}
         </span>
       </div>
@@ -60,7 +60,7 @@ export default function TopWidgets() {
         href="https://www.instagram.com/vani.env/" 
         target="_blank" 
         rel="noopener noreferrer"
-        className="ticket-panel rounded-md px-3 py-1 flex items-center justify-between min-w-[130px] hover:scale-105 hover:shadow-lg transition-transform cursor-pointer group"
+        className="ticket-panel rounded-full px-4 py-2 flex flex-col md:flex-row md:items-center justify-between min-w-[120px] shadow-lg hover:scale-105 transition-transform cursor-pointer group"
       >
         <span className="text-[10px] text-orange-600 font-bold uppercase group-hover:animate-pulse">Follow</span>
         <span className="text-xs font-bold text-gray-800 ml-2">@vani.env</span>

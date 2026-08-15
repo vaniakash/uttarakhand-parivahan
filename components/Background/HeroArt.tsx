@@ -18,8 +18,8 @@ export default function HeroArt() {
       <TopWidgets />
 
       {/* Massive Title */}
-      <div className="absolute top-0 left-0 right-0 pt-16 flex justify-center px-4 pointer-events-none">
-        <h1 className="font-yatra title-stroke text-6xl md:text-8xl lg:text-[130px] text-center leading-tight tracking-tight uppercase drop-shadow-2xl">
+      <div className="absolute top-0 left-0 right-0 pt-10 md:pt-16 flex justify-center px-4 pointer-events-none">
+        <h1 className="font-yatra title-stroke text-5xl md:text-7xl lg:text-[100px] text-center leading-tight tracking-tight uppercase drop-shadow-2xl">
           उत्तराखंड परिवहन
         </h1>
       </div>
